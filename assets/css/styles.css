@@ -1,0 +1,69 @@
+body {
+  letter-spacing: 0.062rem;
+  background: #c2f9cb;
+}
+
+h1 {
+  font-size: 20vw;
+  margin: 0;
+  font-family: "Crimson Pro", serif;
+  text-transform: uppercase;
+  color: #52d9da;
+  text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c, 1px 1px 0 #2f3e9c, 1px 0px 0px #f98ca4, 0px 1px 0px #f98ca4, 2px 1px 0px #f98ca4, 1px 2px 0px #f98ca4, 3px 2px 0px #f98ca4, 2px 3px 0px #f98ca4, 4px 3px 0px #f98ca4, 3px 4px 0px #f98ca4, 5px 4px 0px #f98ca4, 3px 5px 0px #2f3e9c, 6px 5px 0px #2f3e9c, -1px 2px 0 black, 0 3px 0 #2f3e9c, 1px 4px 0 #2f3e9c, 2px 5px 0px #2f3e9c, 2px -1px 0 #2f3e9c, 3px 0 0 #2f3e9c, 4px 1px 0 #2f3e9c, 5px 2px 0px #2f3e9c, 6px 3px 0 #2f3e9c, 7px 4px 0 #2f3e9c, 10px 10px 4px rgba(106, 241, 119, 0.8);
+}
+
+.splitting .char {
+  --weight: 200;
+  font-weight: var(--weight);
+  display: inline-block;
+  transition: all 250ms cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+.transform .splitting .char {
+  --transform: 1;
+  transform: scale(var(--transform));
+}
+
+#page {
+  --position: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20vw;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  border: 1px solid #2f3e9c;
+  padding: 10px;
+  background: #c2f9cb;
+  color: #2f3e9c;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 200;
+  width: 190px;
+}
+.button + button {
+  margin-top: 10px;
+}
+.button:hover, .button:focus {
+  background: #59d9d9;
+}
+
+.msg {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.msg a {
+  color: #2f3e9c;
+}
